@@ -1,0 +1,17 @@
+{
+  "entityMap": {},
+  "blocks": [
+    {
+      "key": "foo",
+      "text": "This is a paragraph with bold and italic.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        { "offset": 25, "length": 4, "style": "BOLD" },
+        { "offset": 34, "length": 6, "style": "ITALIC" }
+      ],
+      "entityRanges": [],
+      "data": {}
+    }
+  ]
+}

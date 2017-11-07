@@ -1,0 +1,17 @@
+{
+  "entityMap": {},
+  "blocks": [
+    {
+      "key": "foo",
+      "text": "This is a paragraph with overlapping bold and italic.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        { "offset": 37, "length": 8, "style": "BOLD" },
+        { "offset": 42, "length": 10, "style": "ITALIC" }
+      ],
+      "entityRanges": [],
+      "data": {}
+    }
+  ]
+}

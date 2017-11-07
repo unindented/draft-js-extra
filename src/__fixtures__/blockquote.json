@@ -1,0 +1,23 @@
+{
+  "entityMap": {},
+  "blocks": [
+    {
+      "key": "foo",
+      "text": "This is a quote:",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "bar",
+      "text": "Education is a system of imposed ignorance.",
+      "type": "blockquote",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    }
+  ]
+}

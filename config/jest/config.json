@@ -1,0 +1,21 @@
+{
+  "rootDir": "../..",
+  "cacheDirectory": "<rootDir>/.jest",
+  "moduleFileExtensions": ["js", "jsx", "json", "ts", "tsx"],
+  "modulePathIgnorePatterns": ["<rootDir>/build", "<rootDir>/coverage", "<rootDir>/example"],
+  "transform": {
+    "^.+\\.(js|jsx)$": "babel-jest",
+    "^.+\\.(ts|tsx)$": "ts-jest/preprocessor.js"
+  },
+  "testRegex": "\\.(test|spec)\\.(ts|tsx|js|jsx)$",
+  "mapCoverage": true,
+  "coverageReporters": ["text", "text-summary", "html"],
+  "coverageThreshold": {
+    "global": {
+      "statements": 90,
+      "branches": 90,
+      "functions": 90,
+      "lines": 90
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.StyleButton {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  color: #666;
+  cursor: pointer;
+  display: inline-block;
+  font-size: small;
+  margin: 0 2px 2px 0;
+  padding: 2px 4px;
+}
+
+.StyleButton--active {
+  background-color: #ddd;
+}

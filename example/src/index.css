@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 8px;
+  padding: 0;
+}
+
+h1,
+h2 {
+  border-bottom: 1px solid #ddd;
+  color: #666;
+  margin: 0;
+  padding-bottom: 6px;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+pre {
+  font-size: 14px;
+  white-space: pre-wrap;
+}

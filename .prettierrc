@@ -1,0 +1,15 @@
+{
+  "parser": "typescript",
+  "printWidth": 100,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": ["*.json", ".*rc"],
+      "options": { "parser": "json" }
+    },
+    {
+      "files": ["*.css"],
+      "options": { "parser": "postcss" }
+    }
+  ]
+}

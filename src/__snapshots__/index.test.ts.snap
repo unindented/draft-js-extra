@@ -1,0 +1,342 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`draft .contentStateToElements handles an empty block 1`] = `
+Array [
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [],
+        "tag": "br",
+      },
+    ],
+    "tag": "p",
+  },
+]
+`;
+
+exports[`draft .contentStateToElements handles blockquotes 1`] = `
+Array [
+  Object {
+    "children": Array [
+      "This is a quote:",
+    ],
+    "tag": "p",
+  },
+  Object {
+    "children": Array [
+      "Education is a system of imposed ignorance.",
+    ],
+    "tag": "blockquote",
+  },
+]
+`;
+
+exports[`draft .contentStateToElements handles code blocks 1`] = `
+Array [
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [
+          "for (var i = 0; i < 10; i++) {
+  console.log('OHAI');
+}",
+        ],
+        "tag": "code",
+      },
+    ],
+    "tag": "pre",
+  },
+]
+`;
+
+exports[`draft .contentStateToElements handles headers 1`] = `
+Array [
+  Object {
+    "children": Array [
+      "This is a large header!",
+    ],
+    "tag": "h1",
+  },
+  Object {
+    "children": Array [
+      "This is a medium header!",
+    ],
+    "tag": "h2",
+  },
+  Object {
+    "children": Array [
+      "This is a small header!",
+    ],
+    "tag": "h3",
+  },
+  Object {
+    "children": Array [
+      "This is a paragraph.",
+    ],
+    "tag": "p",
+  },
+]
+`;
+
+exports[`draft .contentStateToElements handles nested ordered lists 1`] = `
+Array [
+  Object {
+    "children": Array [
+      "This is a list:",
+    ],
+    "tag": "p",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [
+          "Some item",
+          Object {
+            "children": Array [
+              Object {
+                "children": Array [
+                  "Some nested item",
+                ],
+                "tag": "li",
+              },
+              Object {
+                "children": Array [
+                  "Some other nested item",
+                  Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [
+                          "Some deeply nested item",
+                        ],
+                        "tag": "li",
+                      },
+                    ],
+                    "tag": "ol",
+                  },
+                ],
+                "tag": "li",
+              },
+            ],
+            "tag": "ol",
+          },
+        ],
+        "tag": "li",
+      },
+      Object {
+        "children": Array [
+          "Some other item",
+        ],
+        "tag": "li",
+      },
+    ],
+    "tag": "ol",
+  },
+]
+`;
+
+exports[`draft .contentStateToElements handles nested unordered lists 1`] = `
+Array [
+  Object {
+    "children": Array [
+      "This is a list:",
+    ],
+    "tag": "p",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [
+          "Some item",
+          Object {
+            "children": Array [
+              Object {
+                "children": Array [
+                  "Some nested item",
+                ],
+                "tag": "li",
+              },
+              Object {
+                "children": Array [
+                  "Some other nested item",
+                  Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [
+                          "Some deeply nested item",
+                        ],
+                        "tag": "li",
+                      },
+                    ],
+                    "tag": "ul",
+                  },
+                ],
+                "tag": "li",
+              },
+            ],
+            "tag": "ul",
+          },
+        ],
+        "tag": "li",
+      },
+      Object {
+        "children": Array [
+          "Some other item",
+        ],
+        "tag": "li",
+      },
+    ],
+    "tag": "ul",
+  },
+]
+`;
+
+exports[`draft .contentStateToElements handles ordered lists 1`] = `
+Array [
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [
+          "First item",
+        ],
+        "tag": "li",
+      },
+      Object {
+        "children": Array [
+          "Second item",
+        ],
+        "tag": "li",
+      },
+    ],
+    "tag": "ol",
+  },
+]
+`;
+
+exports[`draft .contentStateToElements handles paragraphs 1`] = `
+Array [
+  Object {
+    "children": Array [
+      "This is a paragraph.",
+    ],
+    "tag": "p",
+  },
+]
+`;
+
+exports[`draft .contentStateToElements handles paragraphs with inline styles 1`] = `
+Array [
+  Object {
+    "children": Array [
+      "This is a paragraph with ",
+      Object {
+        "children": Array [
+          "bold",
+        ],
+        "tag": "b",
+      },
+      " and ",
+      Object {
+        "children": Array [
+          "italic",
+        ],
+        "tag": "i",
+      },
+      ".",
+    ],
+    "tag": "p",
+  },
+]
+`;
+
+exports[`draft .contentStateToElements handles paragraphs with overlapping inline styles 1`] = `
+Array [
+  Object {
+    "children": Array [
+      "This is a paragraph with overlapping ",
+      Object {
+        "children": Array [
+          "bold ",
+        ],
+        "tag": "b",
+      },
+      Object {
+        "children": Array [
+          Object {
+            "children": Array [
+              "and",
+            ],
+            "tag": "i",
+          },
+        ],
+        "tag": "b",
+      },
+      Object {
+        "children": Array [
+          " italic",
+        ],
+        "tag": "i",
+      },
+      ".",
+    ],
+    "tag": "p",
+  },
+]
+`;
+
+exports[`draft .contentStateToElements handles unordered lists 1`] = `
+Array [
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [
+          "Some item",
+        ],
+        "tag": "li",
+      },
+      Object {
+        "children": Array [
+          "Some other item",
+        ],
+        "tag": "li",
+      },
+    ],
+    "tag": "ul",
+  },
+]
+`;
+
+exports[`draft .contentStateToReact converts content state to React nodes 1`] = `
+<div>
+  <p>
+    <br />
+  </p>
+</div>
+`;
+
+exports[`draft .elementsToReact handles elements 1`] = `
+<div>
+  <br />
+</div>
+`;
+
+exports[`draft .elementsToReact handles strings 1`] = `
+<div>
+  foo
+</div>
+`;
+
+exports[`draft .elementsToReact handles trees of elements 1`] = `
+<div>
+  <p>
+    This is a paragraph with 
+    <b>
+      bold
+    </b>
+     and 
+    <i>
+      italic
+    </i>
+    .
+  </p>
+</div>
+`;

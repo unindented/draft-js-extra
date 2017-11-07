@@ -1,0 +1,23 @@
+{
+  "entityMap": {},
+  "blocks": [
+    {
+      "key": "foo",
+      "text": "First item",
+      "type": "ordered-list-item",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "bar",
+      "text": "Second item",
+      "type": "ordered-list-item",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    }
+  ]
+}
